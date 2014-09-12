@@ -1,0 +1,89 @@
+html {
+  font-family: 'Chivo', sans-serif;
+  background-color: #57C1DE;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  text-transform: uppercase;
+  font-size: 64pt;
+  color: #fff;
+  margin: 0;
+}
+
+.blue {
+  color: #57C1DE;
+}
+
+.white {
+  color: #fff;
+}
+
+.sub-header {
+  font-size: 24pt;
+  margin: 0;
+}
+
+.introduction .intro-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5%;
+  width: 50%;
+  height: auto;
+}
+
+.about {
+  background-color: #fff;
+}
+.about .about-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5%;
+  width: 70%;
+  height: auto;
+}
+
+.photography {
+  background: url(http://theawesomer.com/photos/2010/11/112910_natgeo_photo_contest_1.jpg) no-repeat;
+  background-size: cover;
+  transition: 1s ease;
+}
+.photography .photography-contents {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5%;
+  width: 50%;
+  height: auto;
+}
+
+.contact {
+  height: 30vh;
+  background-color: #fff;
+}
+.contact .contact-content {
+  width: 80%;
+  height: auto;
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+
+/*# sourceMappingURL=main.css.map */
