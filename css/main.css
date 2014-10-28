@@ -8,6 +8,53 @@ body {
   padding: 0;
 }
 
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #57C1DE;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+nav .nav-container {
+  width: 50%;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+nav .links {
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 3;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14pt;
+  padding: 0px 10px;
+}
+nav #logo {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+nav #logo a {
+  padding: 38px 60px;
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -33,7 +80,7 @@ section {
   margin: 0;
 }
 
-.introduction .intro-text {
+#introduction .intro-text {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -44,10 +91,10 @@ section {
   height: auto;
 }
 
-.about {
+#about {
   background-color: #fff;
 }
-.about .about-text {
+#about .about-text {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -58,12 +105,12 @@ section {
   height: auto;
 }
 
-.photography {
+#photography {
   background: url(http://theawesomer.com/photos/2010/11/112910_natgeo_photo_contest_1.jpg) no-repeat;
   background-size: cover;
   transition: 1s ease;
 }
-.photography .photography-contents {
+#photography .photography-contents {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -74,11 +121,11 @@ section {
   height: auto;
 }
 
-.contact {
+#contact {
   height: 30vh;
   background-color: #fff;
 }
-.contact .contact-content {
+#contact .contact-content {
   width: 80%;
   height: auto;
   position: relative;

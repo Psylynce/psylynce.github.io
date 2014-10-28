@@ -16,4 +16,12 @@ $(document).ready(function() {
 
   // setInterval(getRandomURL, 5000);
 
+  var page = $('html, body');
+  $('nav a').click(function(event) {
+    page.animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500, 'easeInOutQuad');
+    return false;
+  });
+
 });
