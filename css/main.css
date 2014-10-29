@@ -122,15 +122,43 @@ section {
 }
 
 #contact {
-  height: 30vh;
+  height: 250px;
   background-color: #fff;
 }
 #contact .contact-content {
   width: 80%;
   height: auto;
   position: relative;
-  top: 5%;
+  top: 6%;
   left: 5%;
+}
+#contact .contact-content .social-links {
+  height: 250px;
+  position: absolute;
+  right: 0;
+  top: -15px;
+}
+#contact .contact-content .social-links .link {
+  width: 75px;
+  height: 250px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+#contact .contact-content .social-links .link i {
+  color: #57C1DE;
+  font-size: 36pt;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#contact .contact-content .social-links .link:hover {
+  background-color: #57C1DE;
+}
+#contact .contact-content .social-links .link:hover i {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
