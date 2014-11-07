@@ -1,11 +1,13 @@
 html {
   font-family: 'Chivo', sans-serif;
   background-color: #57C1DE;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -58,6 +60,7 @@ nav #logo a {
 section {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 .header {
@@ -159,6 +162,58 @@ section {
 }
 #contact .contact-content .social-links .link:hover i {
   color: #fff;
+}
+
+.more {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 95%;
+  background: #fff;
+}
+.more .arrow {
+  width: 5%;
+  height: 100vh;
+  text-align: center;
+}
+.more .arrow i {
+  font-size: 24pt;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #57C1DE;
+}
+.more .arrow:hover {
+  background-color: #57C1DE;
+  cursor: pointer;
+}
+.more .arrow:hover i {
+  color: #fff;
+}
+.more .content {
+  width: 90%;
+  height: 95vh;
+  position: absolute;
+  top: 2vh;
+  left: 7%;
+}
+.more .content h1 {
+  color: #57C1DE;
+  font-size: 24pt;
+  position: relative;
+  top: 50px;
+  left: 30px;
+}
+.more .content .info {
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  left: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

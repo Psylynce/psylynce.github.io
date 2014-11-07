@@ -24,4 +24,39 @@ $(document).ready(function() {
     return false;
   });
 
+  var more = $('.more');
+  $('.arrow').click(function(event) {
+    var arrow = $(this);
+    var i = $('.arrow i');
+    if (arrow.hasClass('left')) {
+      
+      arrow.removeClass('left');
+      arrow.addClass('right');
+      
+      i.removeClass('fa-chevron-left');
+      i.addClass('fa-chevron-right');
+
+      more.animate({
+        left: 0
+      }, 1000, 'easeInOutQuad');
+
+      return false;
+
+    } else {
+      
+      arrow.removeClass('right');
+      arrow.addClass('left');
+
+      i.removeClass('fa-chevron-right');
+      i.addClass('fa-chevron-left');
+
+      more.animate({
+        left: '95%'
+      }, 1000, 'easeInOutQuad');
+
+      return false;
+    }
+    
+  });
+
 });
