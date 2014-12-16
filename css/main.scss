@@ -205,7 +205,11 @@ section {
       margin: auto;
       position: relative;
       top: 60px;
-      left: 30px;
+      p {
+        color: $mainColor;
+        font-size: 24pt;
+        opacity: 0;
+      }
     }
   }
 }

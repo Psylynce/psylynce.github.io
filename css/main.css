@@ -213,7 +213,11 @@ section {
   margin: auto;
   position: relative;
   top: 60px;
-  left: 30px;
+}
+.more .content .info p {
+  color: #57C1DE;
+  font-size: 24pt;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

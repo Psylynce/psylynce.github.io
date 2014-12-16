@@ -38,7 +38,11 @@ $(document).ready(function() {
 
       more.animate({
         left: 0
-      }, 1000, 'easeInOutQuad');
+      }, 1000, 'easeInOutQuad', function(){
+        $('.info p').animate({
+          opacity: 1
+          }, 500);
+      });
 
       return false;
 
@@ -52,7 +56,11 @@ $(document).ready(function() {
 
       more.animate({
         left: '95%'
-      }, 1000, 'easeInOutQuad');
+      }, 1000, 'easeInOutQuad', function(){
+        $('.info p').animate({
+          opacity: 0
+          }, 500);
+      });
 
       return false;
     }
