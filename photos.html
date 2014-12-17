@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Chivo:900,400' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Psylynce Photography</title>
+
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="js/photoApp.js"></script>
+</head>
+<body ng-app="PhotoApp">
+  <h1 class="center heading">Photography</h1>
+  <div class="container" ng-controller="PhotoController">
+    <ul>
+      <li ng-repeat="photo in photos | limitTo:amount">
+        <img ng-src="img/{{photo}}.jpg" />
+      </li>
+    </ul>
+    <p class="loadMore center" ng-click="loadMore()">{{loadText}}</p>
+  </div>
+</body>
+</html>

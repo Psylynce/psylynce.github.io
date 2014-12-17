@@ -20,6 +20,20 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  .center {
+    text-align: center;
+  }
+}
+
+.heading {
+  color: $white;
+  font-size: 36pt;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -114,7 +128,7 @@ section {
 }
 
 #photography {
-  background: url(http://theawesomer.com/photos/2010/11/112910_natgeo_photo_contest_1.jpg) no-repeat;
+  background: url(../img/hydrant.jpg) no-repeat;
   background-size: cover;
   transition: 1s ease;
   .photography-contents {
@@ -122,6 +136,11 @@ section {
     left: 5%;
     width: 50%;
     height: auto;
+    i {
+      position: relative;
+      top: 3px;
+      left: 20px;
+    }
   }
 }
 
@@ -214,3 +233,32 @@ section {
   }
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 0;
+    li {
+      width: 20%;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.loadMore {
+  color: $white;
+  font-size: 16pt;
+  font-weight: 900;
+  &:hover {
+    cursor: pointer;
+  }
+}
